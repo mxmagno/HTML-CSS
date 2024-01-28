@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="idnome">Nome: </label>
+        <input type="text" name="nome" id="idnome" required autocomplete="name"><br>
+        <label for="idsobrenome">Sobrenome: </label>
+        <input type="text" name="sobrenome" id="idsobrenome" required autocomplete="family-name"><br>
+        <label for="idemail">E-mail: </label>
+        <input type="email" name="email" id="idemail" required autocomplete="email"><br>
+        <label for="idtelefone">Telefone: </label>
+        <input type="tel" name="telefone" id="idtelefone" required placeholder="(XX) XXXXX-XXXX" autocomplete="tel">
+
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="idmas">
+        <label for="idmas">Masculino</label>
+        <input type="radio" name="sexo" id="idfem">
+        <label for="idfem">Feminino</label>
+
+    </fieldset>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="fut" id="idfut"> 
+        <label for="idfut">Futebol</label><br>
+        <input type="checkbox" name="basket" id="idbasket"> 
+        <label for="idbasket">Basquete</label><br>
+        <input type="checkbox" name="nat" id="idnat"> 
+        <label for="idnat">Natação</label><br>
+        <input type="checkbox" name="tenis" id="idtenis"> 
+        <label for="idtenis">Tênis</label><br>
+    </fieldset>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</body>
+</html>
